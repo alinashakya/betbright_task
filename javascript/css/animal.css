@@ -1,0 +1,38 @@
+p {
+    font: 12px arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: arial, sans-serif;
+}
+
+#wrapper {
+    width: 50%;
+    margin: 20% auto;
+    display: flex;
+  	overflow: hidden;
+  	position: relative;
+  	z-index: 90;
+}
+
+.btn-group {
+    padding-bottom: 20px;
+}
+
+.btn-group button {
+    background-color: #e6e7e9;
+    border: 1px solid #e6e7e9;
+    color: #3f3f41;
+    padding: 6px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+.animal-result{
+	clear: both;
+}
+.animal-result img{
+	margin-top: 20px;
+    margin-right: 5px;
+}
