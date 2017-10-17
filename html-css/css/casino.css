@@ -1,0 +1,259 @@
+body {
+    background: #fff;
+}
+
+p {
+    font: 15px arial, sans-serif;
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: arial, sans-serif;
+}
+
+.wrapper {
+    -webkit-box-shadow: 3px 0px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 0px 5px rgba(0,0,0,0.5);
+    box-shadow: 3px 0px 5px rgba(0,0,0,0.5);
+
+    width: 680px;
+    height: 210px;
+    margin: 0 auto;
+
+    position: relative;
+    //z-index: 90;
+}
+
+.left-wrapper{
+	background: #fff;
+	width: 255px;
+	float: left;
+}
+
+.right-wrapper{
+	background: #fff;
+	width: 410px;
+	padding-left: 15px;
+	float: right;
+}
+
+.cas-image{
+	height: 210px;
+	width: 255px;
+}
+
+.cas-detail{
+	margin-top: 15px;
+}
+
+.terms-conditions{
+  padding: 20px;
+}
+
+.cas-detail h1, .terms-conditions h1{
+	font-size : 17px;
+	line-height: 17px;
+	color: #0789ab;
+	margin: 0;
+	font-weight: bold;
+}
+.cas-detail h2{
+	font-size: 26px;
+    color: #0789ab;
+    margin: 0;
+    line-height: 26px;
+}
+
+.text {
+    margin-top: 10px;
+}
+.text p{
+    margin:0;
+}
+
+.text h3 {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 15px
+}
+
+.btn-group {
+    margin-top: 15px;
+}
+
+.btn-group button {
+    background-color: #e6e7e9;
+    border: 1px solid #e6e7e9;
+    color: #3f3f41;
+    cursor: pointer;
+    float: left;
+    width: 130px;
+    height: 30px;
+}
+
+.btn-group button.join-now{
+	background-color: #fcbf0e;
+	margin-right: 10px;
+}
+
+.btn-group button:hover {
+    background-color: #d4d5d9;
+}
+
+.btn-group button.join-now:hover {
+    background-color: #eaad00;
+    font-weight: bold;
+}
+
+.tnc {
+    margin-right: 5px;
+}
+.tnc:hover {
+    background: #d4d5d9 url(../images/rotate.png) 15px 5px no-repeat;
+    background-size: 20px auto;
+}
+
+.ribbon-wrapper {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.ribbon {
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  left: -3px;
+  top: 17px;
+  width: 150px;
+  height:42px;
+  background-color: #fdbe0f;
+  color: #000;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow:    0px 0px 5px rgba(0,0,0,0.5);
+  box-shadow:         0px 0px 5px rgba(0,0,0,0.5);
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: bolder;
+  font-family: arial, sans-serif;
+}
+
+.btn-right{
+    float: right;
+}
+
+.btn-left {
+    float: left;
+}
+
+.container {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    display: block;
+    width: 680px;
+    height: 210px;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+
+}
+
+.card > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card .back {
+    /*color: white;*/
+    width: 680px;
+    height: 210px;
+  /*background-color: black;*/
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+
+
+.flipcard {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.btn-group button{
+  font: 13px arial, sans-serif;
+}
+
+.terms-conditions .scroll {
+  height: 100px;
+  overflow: scroll;
+  padding: 10px 20px 0 0;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 420px;
+        height: 450px;
+    }
+
+    .left-wrapper{
+        float: none;
+        margin-left: 0px;
+    }
+
+    .right-wrapper{
+        float: none;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+
+    .cas-image{
+	    width: 420px;
+    }
+
+    .btn-right button {
+        width: 400px;
+        margin-bottom: 5px;
+    }
+
+    .btn-left button {
+        width: 195px;
+        margin-right: 10px
+    }
+
+    .btn-right{
+    float: none;
+    }
+
+    .btn-left {
+        float: none;
+    }
+
+    .container {
+        width: 420px;
+        height: 450px;
+    }
+
+    .card .back {
+
+        width: 420px;
+        height: 450px;
+    }
+}
