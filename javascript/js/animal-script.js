@@ -1,3 +1,7 @@
+/**
+ * gets images and appends to certain div
+ * @param json
+ */
 function jsonFlickrFeed(json){
   Object.keys(json.items.slice(0,5)).forEach(function (key) {
     var image = document.createElement('img');
@@ -10,6 +14,10 @@ function jsonFlickrFeed(json){
   });
 }
 
+/**
+ * load animals using flickr api
+ * @param animalName 
+ */
 function loadAnimals(animalName){
   document.getElementById("animal-result").innerHTML = "";
   var script = document.createElement('script');

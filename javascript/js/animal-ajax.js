@@ -1,3 +1,7 @@
+/**
+ * load animals using flickr api
+ * @param animalName 
+ */
 function loadAnimals(animalName){
 	document.getElementById("animal-result").innerHTML = "";
 	var xhttp = new XMLHttpRequest();
@@ -10,6 +14,11 @@ function loadAnimals(animalName){
   	xhttp.send();
 }
 
+/**
+ * gets images and appends to certain div
+ * @param response
+ * @param animalName 
+ */
 function jsonFlickrApi(response,animalName){
 	response.forEach(function(val){
 		var image = document.createElement("img");
