@@ -23,3 +23,6 @@ Both of them uses common css file "animal.css".
 
 ### php ######
 This includes php functionality in "date.php" file that calculates and returns the next valid Irish lottery draw date. It has function "getUpcomingDates($date)" where $date is user given date, if not given takes the current date.
+
+### Browser compatibility ######
+It is tested in mozilla version 55.0.2 (64-bit) and chrome version 57.0.2987.133 (64-bit).
