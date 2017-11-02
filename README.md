@@ -1,4 +1,4 @@
-# Betbright Task
+# Css, Js and Php Task
 “Tasks has been divided into three folder structures.”
 1.  html-css: Includes Design Markup
 2.  javascript: Includes JS Excercise
